@@ -378,28 +378,184 @@ Integrantes:
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
-5. <span id="_Toc52661350" class="anchor"></span>**Cuadro de Requerimientos funcionales Inicial**
+5. <span id="_Toc52661350" class="anchor"></span>**Fase de Desarrollo**
 
-    5.1 Cuadro de Requerimientos funcionales Inicial
+    5.1 Perfiles de Usuario
 
-    5.2	Cuadro de Requerimientos No funcionales
+    **Administrador**
+
+    **Descripción:**
+    El Administrador es el responsable de la supervisión y gestión general del evento. Es quien coordina y organiza todos los aspectos logísticos, asegurando que el evento se lleve a cabo sin contratiempos.
+
+    **Responsabilidades:**
+    - Coordinar y gestionar todos los aspectos logísticos del evento.
+    - Supervisar el correcto desarrollo de las actividades programadas.
+    - Resolver problemas operativos y logísticos durante el evento.
+
+    **Interacciones con el Sistema:**
+    - Accede a la plataforma de gestión para supervisar el avance del evento.
+    - Visualiza las métricas e informes relacionados con la logística y el desarrollo del evento.
+
+    ---
+
+    **Estudiante**
+
+    **Descripción:**
+    El Estudiante es el participante final del evento. Se registra, asiste y utiliza los recursos tecnológicos proporcionados durante el evento.
+
+    **Responsabilidades:**
+    - Registrarse para participar en el evento.
+    - Utilizar los recursos tecnológicos proporcionados para las actividades del evento.
+    - Participar activamente en las sesiones y actividades programadas.
+
+    **Interacciones con el Sistema:**
+    - Registra su participación en el evento a través de la plataforma.
+    - Utiliza la plataforma para acceder a materiales, conferencias y actividades programadas.
+
+    ---
+
+    **Bienestar Universitario**
+
+    **Descripción:**
+    El área de Bienestar Universitario es la encargada de organizar y coordinar los eventos culturales y académicos de la universidad. Se asegura de que el evento se desarrolle de acuerdo con la planificación y que los estudiantes participen activamente.
+
+    **Responsabilidades:**
+    - Organizar y coordinar todas las actividades del evento.
+    - Promover la participación estudiantil.
+    - Asegurar la logística del evento y el bienestar de los participantes.
+
+    **Interacciones con el Sistema:**
+    - Utiliza la plataforma para gestionar la inscripción y participación de los estudiantes.
+    - Supervisa la logística y las actividades del evento a través de la plataforma.
+
+    ---
+
+
+    5.2	Modelo Conceptual
 
     - **a)** Diagrama de Paquetes
 
+    ![paquete](./media/diagrama_paquete.png)
+
     - **b)** Diagrama de Casos de Uso
+
+    ![caso](./media/diagrama_caso_uso.png)
 
     - **c)** Escenarios de Caso de Uso (narrativa)
 
+    ---
 
-    5.3	Cuadro de Requerimientos funcionales Final
+    **Caso de Uso: Coordinar Logística del Evento (CU01)**
+
+    **Actores:** Administrador, Bienestar Universitario  
+    **Descripción:** Permitir a los actores coordinar y gestionar todos los aspectos logísticos del evento, como la programación de actividades y la gestión de inscripciones.  
+    **Precondiciones:** El evento debe estar en proceso de organización y los actores deben tener acceso al sistema de gestión.
+
+    | **Caso de Uso**  | Coordinar Logística del Evento (CU01)                                                                                       |
+    |-------------------|----------------------------------------------------------------------------------------------------------------------------|
+    | **Actores**       | Administrador, Bienestar Universitario                                                                                     |
+    | **Descripción**   | Gestionar y coordinar todos los aspectos logísticos del evento, asegurando que las actividades programadas se realicen de manera efectiva. |
+    | **Precondiciones**| El evento debe estar en proceso de organización y los actores deben contar con credenciales para acceder al sistema.       |
+    | **Flujo Normal**  |                                                                                                                            |
+    | **Acción del Actor**                                             | **Curso del Sistema**                                                                                   |
+    | 1. Inicia sesión en el sistema de gestión del evento.              | 2. Accede al panel de control de la logística del evento.                                                |
+    | 3. Revisa y actualiza el calendario de actividades.               | 4. Muestra las actividades programadas, incluyendo la duración y los recursos necesarios.               |
+    | 5. Coordina la asignación de recursos y espacios.                 | 6. Actualiza la plataforma con cambios logísticos según sea necesario.                                  |
+
+    ---
+
+    **Caso de Uso: Participar en el Evento (CU02)**
+
+    **Actores:** Estudiante  
+    **Descripción:** Permitir al estudiante registrarse e interactuar con los recursos proporcionados para participar en el evento.  
+    **Precondiciones:** El evento debe estar abierto para la inscripción y el estudiante debe estar registrado en la plataforma.
+
+    | **Caso de Uso**  | Participar en el Evento (CU02)                                                                                              |
+    |-------------------|----------------------------------------------------------------------------------------------------------------------------|
+    | **Actores**       | Estudiante                                                                                                                |
+    | **Descripción**   | Permitir al estudiante registrarse y participar activamente en las actividades del evento.                                 |
+    | **Precondiciones**| El estudiante debe estar registrado en la plataforma y tener acceso a los recursos proporcionados.                         |
+    | **Flujo Normal**  |                                                                                                                            |
+    | **Acción del Actor**                                             | **Curso del Sistema**                                                                                   |
+    | 1. Accede a la plataforma de inscripción del evento.              | 2. Completa su registro y recibe confirmación.                                                            |
+    | 3. Participa en las actividades programadas.                      | 4. Visualiza los recursos disponibles y accede a las conferencias o materiales.                          |
+    | 5. Asiste a las sesiones o actividades programadas.               | 6. Interactúa con otros participantes y los recursos del evento.                                         |
+
+    ---
+
+    **Caso de Uso: Supervisar el Evento (CU03)**
+
+    **Actores:** Bienestar Universitario  
+    **Descripción:** Permitir a Bienestar Universitario supervisar el evento, asegurando que las actividades se desarrollen según lo planeado y que la participación estudiantil sea adecuada.  
+    **Precondiciones:** El evento debe estar en marcha y Bienestar Universitario debe tener acceso a las métricas y registros del evento.
+
+    | **Caso de Uso**  | Supervisar el Evento (CU03)                                                                                               |
+    |-------------------|----------------------------------------------------------------------------------------------------------------------------|
+    | **Actores**       | Bienestar Universitario                                                                                                   |
+    | **Descripción**   | Supervisar y gestionar el evento en tiempo real, asegurando que todo el desarrollo del evento se realice sin inconvenientes.|
+    | **Precondiciones**| El evento debe estar en curso y Bienestar Universitario debe tener acceso al sistema.                                      |
+    | **Flujo Normal**  |                                                                                                                            |
+    | **Acción del Actor**                                             | **Curso del Sistema**                                                                                   |
+    | 1. Inicia sesión en el sistema de supervisión del evento.          | 2. Visualiza el estado general del evento, incluyendo la participación de los estudiantes.               |
+    | 3. Revisa las métricas de actividad y asistencia.                 | 4. Ajusta los aspectos logísticos si es necesario.                                                        |
+    | 5. Realiza ajustes o intervenciones durante el evento.            | 6. Asegura la correcta ejecución de las actividades.                                                     |
+
+
+    5.3	Modelo Logico
 
     - **a)** Análisis de Objetos
 
+    **Entidades**
+        
+    ![entidad](./media/entidades.png)
+
+    **Frontera**
+        
+    ![frontera](./media/frontera.png)
+
+    **Control**
+        
+    ![entidad](./media/control.png)
+
     - **b)** Diagrama de Actividades con Objetos
+
+    **Diagrama de actividades: Monitorear estado de red (CU01)**
+
+     ![CU01](./media/cu1.png)
+
+     **Diagrama de actividades: Generar Reportes de Uso (CU02)**
+  
+     ![CU02](./media/cu2.png)
+
+     **Diagrama de actividades: Configurar Dashboard (CU03)**
+  
+     ![CU03](./media/cu3.png)
+
+     **Diagrama de actividades: Exportar Datos (CU04)**
+     
+     ![CU04](./media/cu4.png)
 
     - **c)** Diagrama de Secuencia
 
+    **Diagrama de secuencia: Monitorear estado de red (CU01)**
+  
+     ![sec_CU04](./media/secu_cu1.png)
+  
+     **Diagrama de secuencia: Generar Reportes de Uso (CU02)**
+  
+     ![sec_CU04](./media/secu_cu2.png)
+     
+     **Diagrama de secuencia: Configurar Dashboard (CU03)**
+  
+     ![sec_CU04](./media/secu_cu3.png)
+     
+     **Diagrama de secuencia: Exportar Datos (CU04)**
+
+     ![sec_CU04](./media/secu_cu4.png)
+
     - **d)** Diagrama de Clases
+    
+    ![diagram_clase](./media/diagrama_clase.png)
 
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
