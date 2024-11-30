@@ -563,6 +563,16 @@ Integrantes:
 
 <span id="_Toc52661355" class="anchor"></span>**CONCLUSIONES**
 
+
+    El análisis realizado demuestra que el proyecto de infraestructura tecnológica para el evento Juegos Florales de la Universidad Privada de Tacna es completamente viable desde las perspectivas técnica, económica, operativa, legal y social. La infraestructura existente en la universidad es suficiente para soportar la implementación del sistema, y los beneficios esperados, tanto operativos como económicos, superan ampliamente los costos asociados. La infraestructura tecnológica propuesta garantizará un soporte adecuado para las actividades del evento, asegurando una experiencia fluida tanto para los participantes como para los organizadores.
+
+    Además, la implementación de la infraestructura tecnológica mejorará la calidad del evento, proporcionando recursos confiables para la realización de las actividades académicas, culturales y artísticas. Esto no solo permitirá una experiencia más enriquecedora para los estudiantes, sino también para el público y los asistentes. El sistema propuesto optimizará la logística, el acceso a la información y la gestión de recursos, facilitando la organización y el desarrollo eficiente del evento.
+
+    El cumplimiento con las normativas legales, como la Ley N° 29733 de Protección de Datos Personales, garantiza que la información recolectada durante el evento se maneje de manera segura y respetuosa con la privacidad de los participantes. Este cumplimiento refuerza el aspecto ético y la confiabilidad del proyecto. Asimismo, el enfoque tecnológico contribuirá a los objetivos de sostenibilidad de la universidad al promover el uso responsable de los recursos tecnológicos y optimizar el consumo energético durante el evento.
+
+    En resumen, este proyecto no solo resuelve las necesidades tecnológicas actuales del evento Juegos Florales, sino que también sienta las bases para la mejora continua en la organización de futuros eventos en la universidad. Su diseño escalable y flexible asegura que pueda adaptarse a las crecientes demandas tecnológicas de la universidad, posicionándola como un referente en la gestión eficiente de eventos académicos y culturales.
+
+
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 <span id="_Toc52661356" class="anchor"></span>**RECOMENDACIONES**
