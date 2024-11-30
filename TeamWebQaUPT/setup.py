@@ -1,27 +1,29 @@
 from setuptools import setup, find_packages
 
+# Leer el contenido de README.md
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
-    name="TeamWebQaUPT",  # Nombre del paquete.
-    version="0.1",
-    description="Un paquete para pruebas automatizadas con Selenium y pytest",
-    long_description=open("README.md").read(),
+    name="TeamWebQaUPT",
+    version="1.1.0",
+    description="Paquete para pruebas automatizadas de interfaces web",
+    long_description=long_description,  # Se usa el contenido del README.md
     long_description_content_type="text/markdown",
-    url="https://github.com/UPT-FAING-EPIS/proyecto-si8811a-2024-ii-u2-qa-pruebas-valverde-cano",  # Cambia con la URL de tu repositorio.
+    url="https://github.com/UPT-FAING-EPIS/proyecto-si8811a-2024-ii-u2-qa-pruebas-valverde-cano",
     author="Jean Valverde y Anthony Cano",
     author_email="jeanvalverdezamora@gmail.com",
-    license="MIT",
     packages=find_packages(),
     install_requires=[
-        "selenium",
-        "pytest",
-        "allure-pytest",
-        "pytest-selenium",
-        "pytest-xdist",
+        "selenium>=4.8.0",
+        "pytest>=7.0.0",
+        "pytest-xdist>=3.0.0",
+        "allure-pytest>=2.13.0",
     ],
     entry_points={
         "console_scripts": [
             "ejecutar_pruebas=TeamWebQaUPT.runner:main",
-        ],
+        ]
     },
     classifiers=[
         "Programming Language :: Python :: 3",
