@@ -577,6 +577,22 @@ Integrantes:
 
 <span id="_Toc52661356" class="anchor"></span>**RECOMENDACIONES**
 
+    Monitoreo Continuo de la Infraestructura Tecnológica: Es fundamental realizar un monitoreo constante de la infraestructura tecnológica durante el evento para detectar posibles fallos o problemas de conexión. Se recomienda que el equipo de soporte técnico esté disponible en tiempo real para atender cualquier inconveniente y asegurar que los recursos tecnológicos funcionen de manera óptima durante toda la duración del evento.
+
+    Capacitación del Personal Técnico: Para garantizar un funcionamiento eficiente de la infraestructura tecnológica durante los Juegos Florales, es recomendable proporcionar capacitación especializada al personal técnico que se encargará de la gestión y mantenimiento de los equipos. Esto permitirá una respuesta rápida ante cualquier contingencia y optimizará el uso de los recursos disponibles.
+
+    Pruebas Previas al Evento: Se sugiere realizar pruebas exhaustivas de la infraestructura tecnológica al menos una semana antes del evento. Esto incluye pruebas de redes, equipos de sonido, sistemas de proyección, y otros recursos tecnológicos. Estas pruebas permitirán identificar y corregir posibles fallos antes de que el evento comience, asegurando su éxito.
+
+    Optimización de la Gestión de Recursos: Para maximizar la eficiencia, es recomendable implementar una herramienta de gestión de recursos en tiempo real que permita a los organizadores controlar la asignación de equipos, espacios y servicios de manera efectiva. Esto ayudará a evitar conflictos logísticos y asegurará que los recursos sean utilizados de manera adecuada durante el evento.
+
+    Planificación de la Sostenibilidad: Se debe considerar el impacto ambiental del evento y optimizar el consumo de energía de los equipos tecnológicos. Se recomienda la utilización de equipos de bajo consumo energético y la implementación de políticas para minimizar el desperdicio de recursos durante el evento, alineándose con los objetivos de sostenibilidad de la universidad.
+
+    Mejorar la Infraestructura a Largo Plazo: Dado que el evento Juegos Florales se llevará a cabo de manera anual, se recomienda considerar una actualización periódica de la infraestructura tecnológica para mantenerla al día con los avances en tecnología. Además, es importante invertir en soluciones escalables que puedan adaptarse a las necesidades crecientes de la universidad y el evento en el futuro.
+
+    Retroalimentación Post-Evento: Para garantizar mejoras en la infraestructura tecnológica para eventos futuros, se recomienda realizar encuestas de satisfacción entre los participantes, organizadores y personal técnico. Recoger retroalimentación sobre la experiencia tecnológica permitirá identificar áreas de mejora y aplicar ajustes antes del próximo evento.
+
+    ---
+
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 <span id="_Toc52661357" class="anchor"></span>**BIBLIOGRAFIA**
