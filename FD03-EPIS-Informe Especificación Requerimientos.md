@@ -334,11 +334,47 @@ Integrantes:
 
     4.1 Cuadro de Requerimientos funcionales Inicial
 
+    |  ID   | Descripción                                                                                                     | Prioridad |
+    | :---: | :-------------------------------------------------------------------------------------------------------------- | :-------: |
+    | RF-01 | Monitorear el estado de la infraestructura tecnológica (servidores, red, almacenamiento, etc.) en tiempo real.    |   Alta    |
+    | RF-02 | Configurar y desplegar automáticamente los recursos tecnológicos mediante herramientas de automatización (Terraform). |   Alta    |
+    | RF-03 | Garantizar la disponibilidad y escalabilidad de la infraestructura mediante el uso de servicios en la nube (AWS). |   Alta    |
+    | RF-04 | Implementar un sistema de almacenamiento seguro y escalable para almacenar logs, datos históricos y métricas.    |   Alta    |
+    | RF-05 | Realizar pruebas de carga y rendimiento de la infraestructura para asegurar la capacidad durante el evento.       |   Alta    |
+    | RF-06 | Implementar una red de monitoreo que detecte fallos o problemas en la infraestructura tecnológica y genere alertas. |   Alta    |
+    | RF-07 | Configurar el sistema de infraestructura para que pueda integrarse con otras plataformas de la universidad, como la gestión de eventos y bases de datos de usuarios. |  Media    |
+
+
     4.2 Cuadro de Requerimientos No funcionales
+
+    |  ID   | Descripción                                                                                                     | Prioridad |
+    | :---: | :-------------------------------------------------------------------------------------------------------------- | :-------: |
+    | RNF-01 | El sistema de infraestructura debe ser compatible con sistemas operativos Linux y Windows para la gestión de servidores. |   Alta    |
+    | RNF-02 | La plataforma debe ser accesible desde cualquier dispositivo con conexión a Internet (navegador web moderno).    |   Alta    |
+    | RNF-03 | La infraestructura debe garantizar la seguridad de los datos mediante protocolos de encriptación y autenticación. |   Alta    |
+    | RNF-04 | La infraestructura debe ser escalable y permitir el incremento de recursos en caso de aumento de usuarios o demanda durante el evento. |   Alta    |
+    | RNF-05 | La solución debe ofrecer redundancia y alta disponibilidad para los servicios críticos, con un tiempo de inactividad menor al 1%. |   Alta    |
+    | RNF-06 | Los servidores y servicios en la nube deben contar con sistemas de respaldo y recuperación ante fallos automáticos. |   Alta    |
+    | RNF-07 | La infraestructura debe consumir recursos mínimos de CPU y RAM para optimizar el rendimiento de las aplicaciones y servicios del evento. |  Media    |
+
 
     4.3 Cuadro de Requerimientos funcionales Final
 
+    
+
     4.4 Reglas de Negocio
+
+    |  ID   | Descripción                                                                                                     | Prioridad |
+    | :---: | :-------------------------------------------------------------------------------------------------------------- | :-------: |
+    | RN-01 | Solo el personal autorizado podrá acceder a la infraestructura tecnológica mediante credenciales seguras.         |   Alta    |
+    | RN-02 | Los datos transmitidos y almacenados deben ser cifrados para garantizar su confidencialidad y protección.         |   Alta    |
+    | RN-03 | Los recursos tecnológicos deben ser escalables y configurables para adaptarse a diferentes fases del evento (planificación, ejecución, análisis post-evento). |   Alta    |
+    | RN-04 | La infraestructura debe integrarse con otras plataformas tecnológicas de la universidad, garantizando una transferencia segura de datos. |   Media   |
+    | RN-05 | La infraestructura debe permitir una recuperación rápida ante fallos, con un tiempo máximo de inactividad de 15 minutos. |   Alta    |
+    | RN-06 | Los informes de la infraestructura, como el estado de los servidores y la red, deben ser generados automáticamente para evaluación periódica. |   Alta    |
+    | RN-07 | La infraestructura debe contar con un sistema de alertas basado en métricas de rendimiento y disponibilidad.      |   Alta    |
+    | RN-08 | La infraestructura debe ser compatible con servicios de nube como AWS para escalar automáticamente según la demanda. |   Alta    |
+    | RN-09 | El sistema debe incluir la capacidad de realizar pruebas de carga en la infraestructura antes del evento para garantizar su estabilidad. |   Media   |
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
