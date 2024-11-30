@@ -4,14 +4,100 @@
 **TeamWebQaUPT** es un paquete disenado para realizar pruebas automatizadas de interfaces web utilizando Selenium y pytest.  
 Proporciona herramientas reutilizables y faciles de usar para simplificar el proceso de pruebas.
 
-## **Caracteristicas Principales**
-- Configuracion automatica de navegadores utilizando Selenium.
-- Ejecucion de pruebas paralelas con pytest-xdist.
-- Reportes de resultados en formato Allure.
-- Funciones reutilizables para interacciones comunes como dropdowns, validaciones y navegacion.
-- Soporte para pruebas en aplicaciones React, HTML estandar y otros frameworks modernos.
+# Novedades en la Versión 1.1.16 de TeamWebQaUPT
+
+**TeamWebQaUPT** ha sido actualizado para incluir mejoras significativas y nuevas funcionalidades que amplían las capacidades del paquete y simplifican las pruebas automatizadas en diversas plataformas.
 
 ---
+
+## **Nuevas Funcionalidades**
+
+### **1. Soporte para Pruebas Paralelas en Múltiples Navegadores**
+- Las pruebas ahora pueden ejecutarse simultáneamente en **Chrome**, **Firefox** y **Edge**.
+- Esto es posible gracias a la parametrización de navegadores en la fixture `driver` del archivo `conftest.py`.
+
+---
+
+### **2. Compatibilidad con Dropdowns y Menús en Frameworks Modernos**
+- Las funciones para interactuar con **dropdowns** y **listboxes** ahora son compatibles con aplicaciones hechas en React, HTML estándar y otros frameworks.
+- **Uso Ejemplo**:
+    ```python
+    from TeamWebQaUPT.utils import select_dropdown_option
+
+    select_dropdown_option(driver, "button[role='combobox']", "Option Text")
+    ```
+
+---
+
+### **3. Redirección Mediante LinkLabels**
+- Nueva función `navigate_linklabel` para manejar redirecciones usando etiquetas de enlace (LinkLabels).
+- **Uso Ejemplo**:
+    ```python
+    from TeamWebQaUPT.utils import navigate_linklabel
+
+    navigate_linklabel(driver, "a[data-testid='link']", "https://example.com/target")
+    ```
+
+---
+
+### **4. Navegación Mejorada por Menús**
+- La función `navigate_menu` ha sido optimizada para validar automáticamente las redirecciones de URLs en menús dinámicos.
+- **Uso Ejemplo**:
+    ```python
+    from TeamWebQaUPT.utils import navigate_menu
+
+    navigate_menu(
+        driver,
+        menu_items={"Inicio": "http://161.132.50.153/"},
+        base_url="http://161.132.50.153/eventos"
+    )
+    ```
+
+---
+
+## **Mejoras Técnicas**
+
+### **1. Pruebas Paralelas Mejoradas**
+- Ejecución de pruebas en paralelo utilizando `pytest-xdist`.
+- Configuración predeterminada: 3 procesos paralelos.
+
+---
+
+### **2. Compatibilidad con Frameworks Modernos**
+- Las funciones ahora manejan casos dinámicos y asíncronos típicos de frameworks como **React**, **Angular** y **Vue.js**.
+
+---
+
+### **3. Reportes Detallados con Allure**
+- Los resultados de las pruebas se generan en el formato `allure-results`, listos para ser visualizados con Allure.
+
+---
+
+## **Cambios Internos**
+
+### **1. Fixture Parametrizada en `conftest.py`**
+- La fixture `driver` ahora soporta múltiples navegadores (Chrome, Firefox y Edge).
+
+### **2. Comando `ejecutar_pruebas` Mejorado**
+- Soporte para ejecutar pruebas paralelas en múltiples navegadores.
+
+---
+
+## **Documentación Actualizada**
+- El archivo `README.md` incluye ejemplos de las nuevas funciones reutilizables.
+- Instrucciones detalladas para configurar Selenium Grid con el archivo `docker-compose.yml`.
+
+---
+
+## **Estructura Sugerida del Proyecto**
+```bash
+Nombre_De_tu_carpeta
+|
+|---Carpeta_"tests"
+|
+|---docker-compose.yml
+```
+
 
 ## **Instalacion**
 
@@ -282,24 +368,6 @@ networks:
    ```bash
    pytest -n 3 --alluredir=allure-results
    ```
-
----
-
-## **Contribuciones**
-
-Si deseas contribuir al desarrollo de **TeamWebQaUPT**, sigue estos pasos:
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/tu_usuario/TeamWebQaUPT
-   cd TeamWebQaUPT
-   ```
-
-2. Instala las dependencias para desarrollo:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Crea tus cambios y envia un pull request.
 
 ---
 

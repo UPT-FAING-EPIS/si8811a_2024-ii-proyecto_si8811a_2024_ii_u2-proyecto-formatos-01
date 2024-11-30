@@ -1,19 +1,22 @@
 from setuptools import setup, find_packages
 
-# Leer el contenido de README.md
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
     name="TeamWebQaUPT",
-    version="1.1.0",
+    version="1.1.16",
     description="Paquete para pruebas automatizadas de interfaces web",
-    long_description=long_description,  # Se usa el contenido del README.md
+    long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/UPT-FAING-EPIS/proyecto-si8811a-2024-ii-u2-qa-pruebas-valverde-cano",
     author="Jean Valverde y Anthony Cano",
     author_email="jeanvalverdezamora@gmail.com",
     packages=find_packages(),
+    include_package_data=True,  
+    package_data={
+        "TeamWebQaUPT": ["pytest.ini", "conftest.py"],
+    },
     install_requires=[
         "selenium>=4.8.0",
         "pytest>=7.0.0",

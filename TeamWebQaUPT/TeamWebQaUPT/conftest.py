@@ -1,12 +1,14 @@
 import pytest
-from webdriver_config import get_driver
+from TeamWebQaUPT.webdriver_config import get_driver
 
-# Fixture para parametrizar el navegador
-@pytest.fixture(scope="session", params=["chrome", "firefox", "edge"])
+@pytest.fixture(scope="session")
 def driver(request):
-    browser = request.param  # Usamos request.param para obtener el navegador actual
-    driver = get_driver(browser)
-    driver.maximize_window()
-    yield driver
-    driver.quit()
+    browser_name = request.param  # Recibe el parámetro del test
+    driver_instance = get_driver(browser_name)
+    driver_instance.maximize_window()
+    yield driver_instance
+    driver_instance.quit()
 
+@pytest.fixture(scope="session", params=["chrome", "firefox", "edge"])
+def browser_name(request):
+    return request.param
