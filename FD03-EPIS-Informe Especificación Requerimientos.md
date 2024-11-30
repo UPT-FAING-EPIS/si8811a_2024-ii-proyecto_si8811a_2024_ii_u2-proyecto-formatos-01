@@ -322,7 +322,11 @@ Integrantes:
 
     3.1 Diagrama del Proceso Actual – Diagrama de actividades
 
+    ![Diagrama](./media/diagrama_actual.png)
+
     3.2 Diagrama del Proceso Propuesto – Diagrama de actividades Inicial
+
+    ![Diagrama_propuesto](./media/diagrama_propuesto.png)
 
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
