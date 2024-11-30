@@ -150,19 +150,71 @@ Otros Escenarios
 
 
 
+
+
+
+
+
+
+
 <div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 **<u>Informe Especificacion Requerimientos</u>**
 
 [1.	INTRODUCCIÓN](#_Toc52661346)
 
-1.1	Propósito (Diagrama 4+1)
 
-1.2	Alcance
+---
 
-1.3	Definición, siglas y abreviaturas
+### **1.1 Propósito (Diagrama 4+1)**
 
-1.4	Organización del documento
+El propósito del proyecto *"Infraestructura Tecnológica para el Evento Juegos Florales de la Universidad Privada de Tacna"* es diseñar e implementar una infraestructura tecnológica avanzada utilizando el modelo arquitectónico **4+1**, que permita gestionar eficientemente los procesos asociados al evento. Este enfoque contempla las siguientes vistas:  
+- **Vista Lógica**: Representación de la interacción entre componentes de software, tales como aplicaciones web, bases de datos y sistemas de monitoreo.  
+- **Vista de Desarrollo**: Diseño de los módulos que permitirán implementar y mantener el sistema, destacando herramientas como Terraform, AWS y MongoDB Atlas.  
+- **Vista de Procesos**: Detalle del flujo de trabajo y sincronización entre los servicios de computación, almacenamiento y análisis en tiempo real.  
+- **Vista Física**: Especificación de los recursos físicos y virtuales que soportarán el sistema, tales como servidores EC2 y almacenamiento S3.  
+- **Casos de Uso**: Descripción de los escenarios prácticos que la infraestructura abordará, incluyendo inscripción de participantes, monitoreo del evento y generación de reportes en tiempo real.
+
+---
+
+### **1.2 Alcance**
+
+El alcance del proyecto incluye la planificación, implementación y gestión de una infraestructura escalable que cumpla con los requisitos del evento Juegos Florales.  
+- **Ámbito del proyecto**:  
+  - Gestión integral de aplicaciones web y móviles para la interacción de participantes y organizadores.  
+  - Implementación de sistemas de monitoreo y análisis para garantizar el rendimiento en tiempo real.  
+  - Automatización del despliegue y mantenimiento mediante herramientas como Terraform.  
+
+- **Resultados esperados**:  
+  - Reducción de tiempos de configuración y gestión de la infraestructura.  
+  - Mejora en la experiencia de los usuarios gracias a una plataforma robusta y accesible.  
+  - Capacidad de escalabilidad para soportar un incremento en la demanda durante el evento.  
+
+---
+
+### **1.3 Definiciones, Siglas y Abreviaturas**
+
+- **AWS**: Amazon Web Services, proveedor de servicios en la nube.  
+- **Terraform**: Herramienta para la automatización de infraestructura como código (IaC).  
+- **MongoDB Atlas**: Plataforma en la nube para bases de datos NoSQL gestionadas.  
+- **Grafana**: Herramienta de monitoreo y visualización de datos en tiempo real.  
+- **EC2**: Servicio de cómputo elástico de AWS para ejecutar máquinas virtuales.  
+- **S3**: Servicio de almacenamiento de objetos en la nube de AWS.  
+
+---
+
+### **1.4 Organización del Documento**
+
+El documento está organizado en las siguientes secciones:  
+- **Introducción**: Expone los objetivos, alcance y visión general del proyecto.  
+- **Posicionamiento**: Describe la oportunidad de negocio y los problemas a resolver.  
+- **Descripción de los Interesados y Usuarios**: Define los perfiles y necesidades de los grupos involucrados.  
+- **Vista General del Producto**: Expone las capacidades y perspectivas del sistema.  
+- **Características del Producto**: Detalla las funcionalidades principales de la infraestructura.  
+- **Restricciones y Requisitos Adicionales**: Especifica limitaciones técnicas y normativas.  
+- **Conclusiones y Recomendaciones**: Resumen de los resultados esperados y pasos futuros.  
+
+--- 
 
 [2.	OBJETIVOS Y RESTRICCIONES ARQUITECTONICAS](#_Toc52661347)
 
