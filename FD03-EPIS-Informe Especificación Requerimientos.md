@@ -567,9 +567,7 @@ Integrantes:
 | **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
 |----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | 1        | Administrador          | Carga los archivos de la aplicación React a S3.                        | El sistema sube los archivos del proyecto React al bucket de S3.                 |
-| 2        | Estudiante             | Accede a la aplicación React desde la URL proporcionada.               | El sistema muestra la aplicación React de forma funcional
-
- en el navegador.       |
+| 2        | Estudiante             | Accede a la aplicación React desde la URL proporcionada.               | El sistema muestra la aplicación React de forma funcional en el navegador.       |
 | 3        | Administrador          | Configura el bucket de S3 para servir la aplicación como sitio web.    | El sistema configura el bucket como un sitio web estático.                       |
 | 4        | Administrador          | Verifica que la aplicación esté funcionando correctamente.             | El sistema confirma que la aplicación React se muestra sin errores.              |
 
