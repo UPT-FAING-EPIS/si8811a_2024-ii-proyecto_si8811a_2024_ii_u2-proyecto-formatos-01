@@ -578,23 +578,6 @@ Integrantes:
         
     ![entidad](./media/control.png)
 
-    - **b)** Diagrama de Actividades con Objetos
-
-    **Diagrama de actividades: Monitorear estado de red (CU01)**
-
-     ![CU01](./media/cu1.png)
-
-     **Diagrama de actividades: Generar Reportes de Uso (CU02)**
-  
-     ![CU02](./media/cu2.png)
-
-     **Diagrama de actividades: Configurar Dashboard (CU03)**
-  
-     ![CU03](./media/cu3.png)
-
-     **Diagrama de actividades: Exportar Datos (CU04)**
-     
-     ![CU04](./media/cu4.png)
 
     - **c)** Diagrama de Secuencia
 
