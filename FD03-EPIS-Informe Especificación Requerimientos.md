@@ -562,41 +562,41 @@ Integrantes:
 | **Excepciones**    | Si hay un error en la carga o configuración, **Sistema**: El sistema informa al usuario y ofrece soluciones. |
 
 
-    5.3	Modelo Logico
-
+    5.3 Modelo Lógico
+    
     - **a)** Análisis de Objetos
-
+    
     **Entidades**
-        
+    
     ![entidad](./media/entidades.png)
-
+    
     **Frontera**
-        
+    
     ![frontera](./media/frontera.png)
-
+    
     **Control**
-        
-    ![entidad](./media/control.png)
-
-
+    
+    ![control](./media/control.png)
+    
+    
     - **c)** Diagrama de Secuencia
-
+    
     **Diagrama de secuencia: Monitorear estado de red (CU01)**
-  
-     ![sec_CU04](./media/secu_cu1.png)
-  
-     **Diagrama de secuencia: Generar Reportes de Uso (CU02)**
-  
-     ![sec_CU04](./media/secu_cu2.png)
-     
-     **Diagrama de secuencia: Configurar Dashboard (CU03)**
-  
-     ![sec_CU04](./media/secu_cu3.png)
-     
-     **Diagrama de secuencia: Exportar Datos (CU04)**
-
-     ![sec_CU04](./media/secu_cu4.png)
-
+    
+    ![sec_CU01](./media/secu_cu1.png)
+    
+    **Diagrama de secuencia: Generar Reportes de Uso (CU02)**
+    
+    ![sec_CU02](./media/secu_cu2.png)
+    
+    **Diagrama de secuencia: Configurar Dashboard (CU03)**
+    
+    ![sec_CU03](./media/secu_cu3.png)
+    
+    **Diagrama de secuencia: Exportar Datos (CU04)**
+    
+    ![sec_CU04](./media/secu_cu4.png)
+    
     - **d)** Diagrama de Clases
     
     ![diagram_clase](./media/diagrama_clase.png)
