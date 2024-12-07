@@ -441,6 +441,8 @@ Integrantes:
 
     ![paquete](./media/diagrama_paquete.png)
 
+    ![paquete](./media/diagrama_paquete1.png)
+   
     - **b)** Diagrama de Casos de Uso
 
     ![caso](./media/diagrama_caso_uso.png)
