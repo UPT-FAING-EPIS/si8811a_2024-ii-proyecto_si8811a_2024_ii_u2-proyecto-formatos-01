@@ -559,24 +559,24 @@ Integrantes:
 | **Excepciones**    | Si hay un error en la carga o configuración, **Sistema**: El sistema informa al usuario y ofrece soluciones. |
 
 
-    5.3 Modelo Lógico
+5.3 Modelo Lógico
     
-    - **a)** Análisis de Objetos
+- **a)** Análisis de Objetos
     
     
-    **Entidades**
+**Entidades**
     
     
 ![entidad](./media/entidades.png)
     
     
-    **Frontera**
+**Frontera**
     
     
 ![frontera](./media/frontera.png)
     
     
-    **Control**
+ **Control**
     
     
 ![control](./media/control.png)
