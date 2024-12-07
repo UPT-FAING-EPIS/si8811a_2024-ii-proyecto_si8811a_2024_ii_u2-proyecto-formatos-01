@@ -444,22 +444,19 @@ Integrantes:
     - Supervisa la logística y las actividades del evento a través de la plataforma.
 
     
+5.2 Modelo Conceptual
 
+- **a)** Diagrama de Paquetes
 
-    5.2	Modelo Conceptual
+![paquete](./media/diagrama_paquete.png)
 
-    - **a)** Diagrama de Paquetes
-
-    ![paquete](./media/diagrama_paquete.png)
-
-    ![paquete](./media/diagrama_paquete1.png)
+![paquete](./media/diagrama_paquete1.png)
    
-    - **b)** Diagrama de Casos de Uso
+- **b)** Diagrama de Casos de Uso
 
-    ![caso](./media/diagrama_caso_uso.png)
+![caso](./media/diagrama_caso_uso.png)
 
-    - **c)** Escenarios de Caso de Uso (narrativa)
-
+- **c)** Escenarios de Caso de Uso (narrativa)
 
 ### 1. **Monitoreo de Infraestructura**
 
@@ -561,7 +558,6 @@ Integrantes:
 | **Postcondiciones**| La aplicación React está disponible en línea como un sitio web estático.                       |
 | **Excepciones**    | Si hay un error en la carga o configuración, **Sistema**: El sistema informa al usuario y ofrece soluciones. |
 
----
     5.3 Modelo Lógico
     
     - **a)** Análisis de Objetos
