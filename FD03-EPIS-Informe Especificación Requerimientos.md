@@ -602,7 +602,6 @@ Integrantes:
     ![diagram_clase](./media/diagrama_clase.png)
 
 
-<div style="page-break-after: always; visibility: hidden">\pagebreak</div>
 
 
 <span id="_Toc52661355" class="anchor"></span>**CONCLUSIONES**
