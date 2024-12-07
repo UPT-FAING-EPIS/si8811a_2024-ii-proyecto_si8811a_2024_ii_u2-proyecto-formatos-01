@@ -443,7 +443,7 @@ Integrantes:
     - Utiliza la plataforma para gestionar la inscripción y participación de los estudiantes.
     - Supervisa la logística y las actividades del evento a través de la plataforma.
 
-    ---
+    
 
 
     5.2	Modelo Conceptual
