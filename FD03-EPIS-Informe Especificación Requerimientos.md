@@ -561,7 +561,7 @@ Integrantes:
 | **Postcondiciones**| La aplicación React está disponible en línea como un sitio web estático.                       |
 | **Excepciones**    | Si hay un error en la carga o configuración, **Sistema**: El sistema informa al usuario y ofrece soluciones. |
 
-
+---
     5.3 Modelo Lógico
     
     - **a)** Análisis de Objetos
