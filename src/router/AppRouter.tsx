@@ -12,14 +12,16 @@ import Login from '@/pages/Login'
 import Lugares from '@/pages/Lugares'
 import Participantes from '@/pages/Participantes'
 import { useEffect } from 'react'
-import { Navigate, Route, Routes } from 'react-router-dom'
+import { Navigate, Route, Routes, useLocation } from 'react-router-dom'
 
 function AppRouter() {
   const { status, checkAuthToken } = useAuthStore()
 
+  const location = useLocation()
+
   useEffect(() => {
     checkAuthToken()
-  }, [])
+  }, [location])
 
   if (status === 'checking') {
     return <h3>Cargando...</h3>

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import '@/background.css'
-import CountdownTimer from '@/components/CountdownTimer'
+import { TimerFG } from 'timerfg'
 const Home = () => {
   const startDate = new Date('2024-10-09T00:00:00')
   const endDate = new Date('2024-10-10T00:00:00')
@@ -48,18 +48,18 @@ const Home = () => {
           <div className='hidden md:flex space-x-6 p-4 ml-4'>
             <div>
               <Link
-                to='/about'
-                className='text-white sm:text-xl font-semibold hover:underline transition duration-300'
-              >
-                Acerca de
-              </Link>
-            </div>
-            <div>
-              <Link
                 to='/eventos'
                 className='text-white sm:text-xl font-semibold hover:underline transition duration-300'
               >
                 Eventos
+              </Link>
+            </div>
+            <div>
+              <Link
+                to='/about'
+                className='text-white sm:text-xl font-semibold hover:underline transition duration-300'
+              >
+                Acerca de
               </Link>
             </div>
             <div>
@@ -80,44 +80,45 @@ const Home = () => {
             </div>
           </div>
         </header>
-
-        <main className='container mx-auto px-4 py-20 md:py-10 lg:py-30 xl:py-30 2xl:py-50 text-center'>
-          <div className='space-y-4 mb-12'>
-            <h1 className='font-compact-black text-6xl md:text-8xl font-bold text-white uppercase tracking-widest'>
-              Juegos Florales
-            </h1>
-            <p className='text-yellow-300 text-lg sm:text-xl md:text-2xl mt-4'>
-              Evento cultural organizado por la Universidad Privada de Tacna
-            </p>
-          </div>
-          <div className='md:flex md:flex-row justify-center gap-2'>
-            <div className='flex gap-6 justify-center items-center flex-col md:flex-row'>
-              <Link
-                to='/eventos'
-                className='mt-2 bg-white text-black px-6 py-3 rounded-full text-xl font-semibold shadow-lg hover:bg-gray-200 transition duration-300'
-              >
-                Enterate de los Eventos
-              </Link>
+        <div className='flex flex-col justify-center items-center min-h-screen pb-80'>
+          <main className='max-w-7xl mx-auto px-4 py-20 md:py-10 lg:py-30 xl:py-30 2xl:py-50 text-center'>
+            <div className='space-y-4 mb-12'>
+              <h1 className='font-compact-black text-6xl md:text-8xl font-bold text-white uppercase tracking-widest'>
+                Juegos Florales
+              </h1>
+              <p className='text-yellow-300 text-lg sm:text-xl md:text-2xl mt-4'>
+                Evento cultural organizado por la Universidad Privada de Tacna
+              </p>
             </div>
-            <div className='mt-2 flex gap-6 justify-center items-center flex-col md:flex-row'>
-              <Link
-                to='/lugares'
-                className='bg-transparent border-2 border-white text-white px-6 py-3 rounded-full text-xl font-semibold hover:bg-white hover:text-black transition duration-300'
-              >
-                Conoce las Ubicaciones
-              </Link>
+            <div className='md:flex md:flex-row justify-center gap-2'>
+              <div className='flex gap-6 justify-center items-center flex-col md:flex-row'>
+                <Link
+                  to='/eventos'
+                  className='mt-2 bg-white text-black px-6 py-3 rounded-full text-xl font-semibold shadow-lg hover:bg-gray-200 transition duration-300'
+                >
+                  Enterate de los Eventos
+                </Link>
+              </div>
+              <div className='mt-2 flex gap-6 justify-center items-center flex-col md:flex-row'>
+                <Link
+                  to='/lugares'
+                  className='bg-transparent border-2 border-white text-white px-6 py-3 rounded-full text-xl font-semibold hover:bg-white hover:text-black transition duration-300'
+                >
+                  Conoce las Ubicaciones
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className=' hidden md:flex justify-center items-center w-full mt-8'>
-            <div className='w-auto'>
-              <CountdownTimer
-                className='text-center w-auto '
-                startDate={startDate}
-                endDate={endDate}
-              />
+            <div className=' hidden md:flex justify-center items-center w-full mt-8'>
+              <div className='w-auto'>
+                <TimerFG
+                  className='text-center w-auto '
+                  startDate={startDate}
+                  endDate={endDate}
+                />
+              </div>
             </div>
-          </div>
-        </main>
+          </main>
+        </div>
 
         <div className='flex flex-col'>
           <div className='absolute bottom-8 left-4 text-white px-4 sm:px-12'>

@@ -38,7 +38,7 @@ import { useToast } from '@/hooks/use-toast'
 export default function Evento() {
   const { toast } = useToast()
 
-  const { isAuthenticated } = useAuthStore()
+  const { isAdmin } = useAuthStore()
   const params = useParams()
   const id = params.id
   const [evento, setEvento] = useState<EventoType | undefined>()
@@ -119,7 +119,7 @@ export default function Evento() {
                       : evento?.resultado}
                   </CardDescription>
                 </div>
-                {isAuthenticated && (
+                {isAdmin && (
                   <div className='flex items-center gap-4'>
                     <Link
                       to={'/eventos/editar/' + evento?.id}
