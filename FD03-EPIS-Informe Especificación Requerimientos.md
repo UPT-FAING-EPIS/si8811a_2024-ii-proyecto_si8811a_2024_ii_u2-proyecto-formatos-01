@@ -456,107 +456,125 @@ Integrantes:
 
 ![caso](./media/diagrama_caso_uso.png)
 
+
 - **c)** Escenarios de Caso de Uso (narrativa)
 
-### 1. **Monitoreo de Infraestructura**
 
-| **Escenario**     | **Descripción**                                                                                 |
-|-------------------|-------------------------------------------------------------------------------------------------|
-| **Actor Principal**| Usuario                                                                                        |
-| **Precondiciones** | El sistema de infraestructura está desplegado y funcionando correctamente.                     |
-| **Flujo Básico**   | 1. **Actor**: El usuario accede al panel de monitoreo. <br> 2. **Sistema**: El sistema muestra el estado de los servidores, red, almacenamiento y otros recursos en tiempo real. <br> 3. **Actor**: El usuario observa los datos y métricas en el dashboard. |
-| **Postcondiciones**| El usuario obtiene información actualizada sobre el estado de la infraestructura.             |
-| **Excepciones**    | Si hay problemas con la conexión, **Sistema**: El sistema muestra un mensaje de error indicando que los datos no están disponibles. |
+---
 
-### 2. **Despliegue Automático con Terraform**
+### Caso de Uso 1: **Monitoreo de Infraestructura**
 
-| **Escenario**     | **Descripción**                                                                                 |
-|-------------------|-------------------------------------------------------------------------------------------------|
-| **Actor Principal**| Usuario                                                                                        |
-| **Precondiciones** | El usuario tiene acceso a Terraform y está autorizado para realizar despliegues.               |
-| **Flujo Básico**   | 1. **Actor**: El usuario ejecuta el comando para desplegar la infraestructura con Terraform. <br> 2. **Sistema**: Terraform configura y despliega los recursos automáticamente. <br> 3. **Actor**: El usuario verifica el estado del despliegue a través de la consola. |
-| **Postcondiciones**| La infraestructura se despliega correctamente según la configuración definida en Terraform.    |
-| **Excepciones**    | Si ocurre un error durante el despliegue, **Sistema**: Terraform muestra los detalles del error para su corrección. |
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Accede al panel de monitoreo de la infraestructura.                    | El sistema muestra el estado general de la infraestructura (servidores, red, etc.). |
+| 2        | Bienestar Universitario| Solicita información sobre el estado de los recursos para coordinar eventos. | El sistema proporciona información detallada sobre los recursos disponibles.     |
+| 3        | Administrador          | Selecciona un servidor o recurso para monitorear.                      | El sistema muestra detalles específicos de ese recurso, como uso de CPU, RAM, etc. |
+| 4        | Administrador          | Revisa los gráficos de uso en tiempo real.                             | El sistema actualiza los gráficos mostrando el rendimiento y posibles alertas.    |
+| 5        | Administrador          | Toma decisiones sobre si escalar o realizar mantenimiento.            | El sistema ofrece recomendaciones para mejorar el rendimiento o escalar los recursos. |
 
-### 3. **Garantía de Disponibilidad y Escalabilidad en AWS**
+---
 
-| **Escenario**     | **Descripción**                                                                                 |
-|-------------------|-------------------------------------------------------------------------------------------------|
-| **Actor Principal**| Usuario                                                                                        |
-| **Precondiciones** | Los recursos en AWS están configurados para soportar escalabilidad.                            |
-| **Flujo Básico**   | 1. **Actor**: El usuario accede al panel de AWS para verificar la disponibilidad y escalabilidad de los recursos. <br> 2. **Sistema**: El sistema verifica la infraestructura y garantiza que se puede escalar según la demanda. |
-| **Postcondiciones**| Los recursos son escalables y disponibles según las necesidades del evento.                    |
-| **Excepciones**    | Si la infraestructura no puede escalar, **Sistema**: El sistema envía una alerta notificando la limitación. |
+### Caso de Uso 2: **Despliegue Automático con Terraform**
 
-### 4. **Pruebas de Carga y Rendimiento**
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Inicia el despliegue con Terraform.                                    | El sistema ejecuta el script de Terraform y comienza a provisionar los recursos.   |
+| 2        | Administrador          | Confirma si desea proceder con la configuración.                       | El sistema procede con la ejecución del plan de Terraform y muestra el progreso.   |
+| 3        | Estudiante             | Verifica que la infraestructura esté lista para realizar las actividades del evento. | El sistema muestra el estado final de la infraestructura para su uso.             |
+| 4        | Administrador          | Valida la creación de los recursos.                                    | El sistema confirma que todos los recursos fueron creados correctamente.          |
 
-| **Escenario**     | **Descripción**                                                                                 |
-|-------------------|-------------------------------------------------------------------------------------------------|
-| **Actor Principal**| Usuario                                                                                        |
-| **Precondiciones** | La infraestructura está configurada y lista para realizar pruebas.                             |
-| **Flujo Básico**   | 1. **Actor**: El usuario configura las pruebas de carga y rendimiento. <br> 2. **Sistema**: El sistema realiza las pruebas simulando alta demanda. <br> 3. **Actor**: El usuario revisa los resultados para identificar posibles cuellos de botella. |
-| **Postcondiciones**| El sistema muestra los resultados de las pruebas con las métricas de rendimiento.              |
-| **Excepciones**    | Si alguna de las pruebas falla, **Sistema**: El sistema proporciona un informe detallado del error. |
+---
 
-### 5. **Integración con Plataformas Universitarias**
+### Caso de Uso 3: **Garantía de Disponibilidad y Escalabilidad en AWS**
 
-| **Escenario**     | **Descripción**                                                                                 |
-|-------------------|-------------------------------------------------------------------------------------------------|
-| **Actor Principal**| Usuario                                                                                        |
-| **Precondiciones** | La plataforma universitaria está configurada y disponible para la integración.                 |
-| **Flujo Básico**   | 1. **Actor**: El usuario configura la integración con la plataforma universitaria. <br> 2. **Sistema**: El sistema sincroniza la infraestructura con las bases de datos de usuarios y gestión de eventos. |
-| **Postcondiciones**| La infraestructura está integrada y puede interactuar con otras plataformas universitarias.     |
-| **Excepciones**    | Si hay problemas con la integración, **Sistema**: El sistema muestra un error indicando la causa. |
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Revisa el estado de los recursos en AWS.                               | El sistema muestra el estado actual de todos los recursos y su capacidad de escalabilidad. |
+| 2        | Bienestar Universitario| Solicita que se aumenten los recursos para eventos adicionales.        | El sistema aplica los cambios para aumentar la capacidad de la infraestructura.    |
+| 3        | Administrador          | Configura el escalado automático para los recursos.                    | El sistema confirma la configuración del escalado automático en AWS.              |
+| 4        | Administrador          | Monitorea el comportamiento de los recursos después del escalado.     | El sistema ajusta la infraestructura automáticamente y muestra el progreso.       |
 
-### 6. **Implementación de EC2 con Amazon Linux 2 para Docker**
+---
 
-| **Escenario**     | **Descripción**                                                                                 |
-|-------------------|-------------------------------------------------------------------------------------------------|
-| **Actor Principal**| Usuario                                                                                        |
-| **Precondiciones** | El usuario tiene acceso a AWS y tiene los permisos necesarios para crear una instancia EC2.     |
-| **Flujo Básico**   | 1. **Actor**: El usuario configura una instancia EC2 con Amazon Linux 2. <br> 2. **Sistema**: El sistema instala Docker en la instancia. <br> 3. **Actor**: El usuario verifica que Docker se está ejecutando correctamente. |
-| **Postcondiciones**| La instancia EC2 con Docker está funcionando correctamente.                                    |
-| **Excepciones**    | Si la configuración de la instancia falla, **Sistema**: El sistema muestra un mensaje de error y detalles del fallo. |
+### Caso de Uso 4: **Pruebas de Carga y Rendimiento**
 
-### 7. **Configuración de Instancia de Grafana Cloud**
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Configura los parámetros para la prueba de carga.                      | El sistema recibe los parámetros y comienza la ejecución de las pruebas de carga. |
+| 2        | Estudiante             | Participa en las pruebas de carga accediendo a los recursos.           | El sistema simula una alta demanda de tráfico y ajusta la infraestructura.        |
+| 3        | Administrador          | Observa los resultados de la prueba.                                   | El sistema genera un informe con las métricas de rendimiento y posibles cuellos de botella. |
+| 4        | Administrador          | Ajusta la infraestructura según los resultados de la prueba.           | El sistema realiza ajustes automáticamente según las recomendaciones.            |
 
-| **Escenario**     | **Descripción**                                                                                 |
-|-------------------|-------------------------------------------------------------------------------------------------|
-| **Actor Principal**| Usuario                                                                                        |
-| **Precondiciones** | El usuario tiene acceso a Grafana Cloud y los recursos necesarios.                             |
-| **Flujo Básico**   | 1. **Actor**: El usuario configura la instancia de Grafana Cloud. <br> 2. **Sistema**: El sistema configura los paneles de monitoreo según los parámetros definidos. <br> 3. **Actor**: El usuario accede al dashboard para visualizar las métricas. |
-| **Postcondiciones**| La instancia de Grafana Cloud está configurada y mostrando los datos.                          |
-| **Excepciones**    | Si hay errores en la configuración, **Sistema**: El sistema muestra los detalles del fallo y sugerencias para corregirlo. |
+---
 
-### 8. **Hospedaje de Aplicación Flutter en S3**
+### Caso de Uso 5: **Integración con Plataformas Universitarias**
 
-| **Escenario**     | **Descripción**                                                                                 |
-|-------------------|-------------------------------------------------------------------------------------------------|
-| **Actor Principal**| Usuario                                                                                        |
-| **Precondiciones** | El usuario tiene acceso a AWS y a un bucket S3 configurado.                                     |
-| **Flujo Básico**   | 1. **Actor**: El usuario carga los archivos de la aplicación Flutter en el bucket S3. <br> 2. **Sistema**: El sistema configura el bucket para servir la aplicación como un sitio web estático. <br> 3. **Actor**: El usuario accede a la aplicación desde la URL proporcionada. |
-| **Postcondiciones**| La aplicación Flutter está disponible en línea como un sitio web estático.                     |
-| **Excepciones**    | Si hay un error en la carga o configuración, **Sistema**: El sistema informa al usuario y ofrece soluciones. |
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Bienestar Universitario| Accede a la plataforma para gestionar la inscripción de estudiantes.   | El sistema muestra la lista de estudiantes registrados y actividades disponibles. |
+| 2        | Estudiante             | Registra su participación en el evento.                                | El sistema confirma la inscripción del estudiante.                                |
+| 3        | Administrador          | Verifica que la sincronización de datos con la plataforma universitaria se haya realizado. | El sistema confirma la integración exitosa de la información.                     |
+| 4        | Bienestar Universitario| Supervisa las actividades del evento y el progreso de la participación. | El sistema muestra el estado en tiempo real de las actividades y la participación. |
 
-### 9. **Configuración de MongoDB Atlas**
+---
 
-| **Escenario**     | **Descripción**                                                                                 |
-|-------------------|-------------------------------------------------------------------------------------------------|
-| **Actor Principal**| Usuario                                                                                        |
-| **Precondiciones** | El usuario tiene acceso a MongoDB Atlas y las credenciales necesarias.                         |
-| **Flujo Básico**   | 1. **Actor**: El usuario configura un cluster en MongoDB Atlas. <br> 2. **Sistema**: El sistema crea los usuarios y las bases de datos necesarias. <br> 3. **Actor**: El usuario verifica que la configuración se haya completado con éxito. |
-| **Postcondiciones**| El cluster y los usuarios de MongoDB Atlas están correctamente configurados.                   |
-| **Excepciones**    | Si ocurre un error en la configuración, **Sistema**: El sistema muestra un mensaje de error detallado.      |
+### Caso de Uso 6: **Implementación de EC2 con Amazon Linux 2 para Docker**
 
-### 10. **Hospedaje de Aplicación React en S3**
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Crea una instancia EC2 con Amazon Linux 2.                             | El sistema provisiona la instancia en AWS.                                        |
+| 2        | Estudiante             | Accede a la aplicación desplegada en el contenedor Docker.             | El sistema confirma que la aplicación está disponible y operativa.               |
+| 3        | Administrador          | Instala Docker en la instancia EC2.                                    | El sistema instala Docker correctamente en la instancia.                          |
+| 4        | Administrador          | Configura y valida el contenedor Docker con las aplicaciones.          | El sistema valida que el contenedor esté configurado correctamente.              |
 
-| **Escenario**     | **Descripción**                                                                                 |
-|-------------------|-------------------------------------------------------------------------------------------------|
-| **Actor Principal**| Usuario                                                                                        |
-| **Precondiciones** | El usuario tiene acceso a AWS y a un bucket S3 configurado.                                     |
-| **Flujo Básico**   | 1. **Actor**: El usuario carga los archivos de la aplicación React en el bucket S3. <br> 2. **Sistema**: El sistema configura el bucket para servir la aplicación como un sitio web estático. <br> 3. **Actor**: El usuario accede a la aplicación desde la URL proporcionada. |
-| **Postcondiciones**| La aplicación React está disponible en línea como un sitio web estático.                       |
-| **Excepciones**    | Si hay un error en la carga o configuración, **Sistema**: El sistema informa al usuario y ofrece soluciones. |
+---
+
+### Caso de Uso 7: **Configuración de Instancia de Grafana Cloud**
+
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Crea una cuenta en Grafana Cloud y configura la instancia.             | El sistema crea la instancia y genera los datos de acceso.                        |
+| 2        | Administrador          | Configura los servicios y paneles para monitorear.                     | El sistema configura las fuentes de datos y los paneles en Grafana.              |
+| 3        | Estudiante             | Accede a los paneles de monitoreo para ver los resultados del evento.  | El sistema muestra los paneles con las métricas relevantes del evento.           |
+| 4        | Administrador          | Valida que los datos sean correctos en los paneles.                    | El sistema confirma que los datos mostrados son correctos y actualizados.        |
+
+---
+
+### Caso de Uso 8: **Hospedaje de Aplicación Flutter en S3**
+
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Carga los archivos de la aplicación Flutter a S3.                      | El sistema sube los archivos al bucket de S3.                                     |
+| 2        | Estudiante             | Accede a la aplicación Flutter a través de la URL pública.             | El sistema muestra la aplicación Flutter de manera funcional.                    |
+| 3        | Administrador          | Configura el bucket S3 para servir como sitio web.                     | El sistema configura el bucket para el hospedaje web y muestra la URL.           |
+| 4        | Administrador          | Verifica que la aplicación esté funcionando correctamente.             | El sistema confirma que la aplicación está accesible sin errores.                |
+
+---
+
+### Caso de Uso 9: **Configuración de MongoDB Atlas**
+
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Crea un cluster en MongoDB Atlas.                                      | El sistema provisiona el cluster en MongoDB Atlas.                                |
+| 2        | Estudiante             | Accede a los datos almacenados en el cluster para las actividades.     | El sistema confirma la conexión y acceso a los datos del cluster.                |
+| 3        | Administrador          | Configura los permisos para los usuarios del cluster.                 | El sistema valida y aplica los permisos correctamente.                            |
+| 4        | Administrador          | Verifica la conectividad y el estado del cluster.                      | El sistema proporciona información sobre el estado del cluster y métricas.       |
+
+---
+
+### Caso de Uso 10: **Hospedaje de Aplicación React en S3**
+
+| **Paso** | **Actor**             | **Acción del Actor**                                                   | **Respuesta del Sistema**                                                          |
+|----------|-----------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| 1        | Administrador          | Carga los archivos de la aplicación React a S3.                        | El sistema sube los archivos del proyecto React al bucket de S3.                 |
+| 2        | Estudiante             | Accede a la aplicación React desde la URL proporcionada.               | El sistema muestra la aplicación React de forma funcional
+
+ en el navegador.       |
+| 3        | Administrador          | Configura el bucket de S3 para servir la aplicación como sitio web.    | El sistema configura el bucket como un sitio web estático.                       |
+| 4        | Administrador          | Verifica que la aplicación esté funcionando correctamente.             | El sistema confirma que la aplicación React se muestra sin errores.              |
+
+--- 
+
 
 
 5.3 Modelo Lógico
@@ -583,24 +601,49 @@ Integrantes:
     
     
     
-    - **c)** Diagrama de Secuencia
+- **c)** Diagrama de Secuencia
     
-    **Diagrama de secuencia: Monitorear estado de red (CU01)**
+    **Diagrama de secuencia: Monitoreo de Infraestructura (CU01)**
     
     ![sec_CU01](./media/secu_cu1.png)
-    
-    **Diagrama de secuencia: Generar Reportes de Uso (CU02)**
+
+    **Diagrama de secuencia: Despliegue Automático con Terraform (CU02)**
     
     ![sec_CU02](./media/secu_cu2.png)
-    
-    **Diagrama de secuencia: Configurar Dashboard (CU03)**
+
+    **Diagrama de secuencia: Garantía de Disponibilidad y Escalabilidad en AWS (CU03)**
     
     ![sec_CU03](./media/secu_cu3.png)
-    
-    **Diagrama de secuencia: Exportar Datos (CU04)**
+
+    **Diagrama de secuencia: Pruebas de Carga y Rendimiento (CU04)**
     
     ![sec_CU04](./media/secu_cu4.png)
+  
+    **Diagrama de secuencia: Integración con Plataformas Universitarias (CU05)**
     
+    ![sec_CU05](./media/secu_cu5.png)
+
+    **Diagrama de secuencia: Implementación de EC2 con Amazon Linux 2 para Docker (CU06)**
+    
+    ![sec_CU06](./media/secu_cu6.png)
+
+    **Diagrama de secuencia: Configuración de Instancia de Grafana Cloud (CU07)**
+    
+    ![sec_CU07](./media/secu_cu7.png)
+
+    **Diagrama de secuencia: Hospedaje de Aplicación Flutter en S3 (CU08)**
+    
+    ![sec_CU08](./media/secu_cu8.png)
+
+    **Diagrama de secuencia: Configuración de MongoDB Atlas (CU09)**
+    
+    ![sec_CU09](./media/secu_cu9.png)
+
+    **Diagrama de secuencia: Hospedaje de Aplicación React en S3 (CU10)**
+    
+    ![sec_CU10](./media/secu_cu10.png)
+  
+
     - **d)** Diagrama de Clases
     
     ![diagram_clase](./media/diagrama_clase.png)
