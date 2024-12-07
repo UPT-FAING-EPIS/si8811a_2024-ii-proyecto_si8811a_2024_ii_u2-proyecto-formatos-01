@@ -558,6 +558,7 @@ Integrantes:
 | **Postcondiciones**| La aplicación React está disponible en línea como un sitio web estático.                       |
 | **Excepciones**    | Si hay un error en la carga o configuración, **Sistema**: El sistema informa al usuario y ofrece soluciones. |
 
+
     5.3 Modelo Lógico
     
     - **a)** Análisis de Objetos
@@ -566,19 +567,19 @@ Integrantes:
     **Entidades**
     
     
-    ![entidad](./media/entidades.png)
+![entidad](./media/entidades.png)
     
     
     **Frontera**
     
     
-    ![frontera](./media/frontera.png)
+![frontera](./media/frontera.png)
     
     
     **Control**
     
     
-    ![control](./media/control.png)
+![control](./media/control.png)
     
     
     
