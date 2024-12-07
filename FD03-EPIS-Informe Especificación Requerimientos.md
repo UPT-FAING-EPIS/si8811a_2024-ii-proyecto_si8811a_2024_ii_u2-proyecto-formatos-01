@@ -460,62 +460,106 @@ Integrantes:
 
     - **c)** Escenarios de Caso de Uso (narrativa)
 
-    ---
 
-    **Caso de Uso: Coordinar Logística del Evento (CU01)**
+### 1. **Monitoreo de Infraestructura**
 
-    **Actores:** Administrador, Bienestar Universitario  
-    **Descripción:** Permitir a los actores coordinar y gestionar todos los aspectos logísticos del evento, como la programación de actividades y la gestión de inscripciones.  
-    **Precondiciones:** El evento debe estar en proceso de organización y los actores deben tener acceso al sistema de gestión.
+| **Escenario**     | **Descripción**                                                                                 |
+|-------------------|-------------------------------------------------------------------------------------------------|
+| **Actor Principal**| Usuario                                                                                        |
+| **Precondiciones** | El sistema de infraestructura está desplegado y funcionando correctamente.                     |
+| **Flujo Básico**   | 1. **Actor**: El usuario accede al panel de monitoreo. <br> 2. **Sistema**: El sistema muestra el estado de los servidores, red, almacenamiento y otros recursos en tiempo real. <br> 3. **Actor**: El usuario observa los datos y métricas en el dashboard. |
+| **Postcondiciones**| El usuario obtiene información actualizada sobre el estado de la infraestructura.             |
+| **Excepciones**    | Si hay problemas con la conexión, **Sistema**: El sistema muestra un mensaje de error indicando que los datos no están disponibles. |
 
-    | **Caso de Uso**  | Coordinar Logística del Evento (CU01)                                                                                       |
-    |-------------------|----------------------------------------------------------------------------------------------------------------------------|
-    | **Actores**       | Administrador, Bienestar Universitario                                                                                     |
-    | **Descripción**   | Gestionar y coordinar todos los aspectos logísticos del evento, asegurando que las actividades programadas se realicen de manera efectiva. |
-    | **Precondiciones**| El evento debe estar en proceso de organización y los actores deben contar con credenciales para acceder al sistema.       |
-    | **Flujo Normal**  |                                                                                                                            |
-    | **Acción del Actor**                                             | **Curso del Sistema**                                                                                   |
-    | 1. Inicia sesión en el sistema de gestión del evento.              | 2. Accede al panel de control de la logística del evento.                                                |
-    | 3. Revisa y actualiza el calendario de actividades.               | 4. Muestra las actividades programadas, incluyendo la duración y los recursos necesarios.               |
-    | 5. Coordina la asignación de recursos y espacios.                 | 6. Actualiza la plataforma con cambios logísticos según sea necesario.                                  |
+### 2. **Despliegue Automático con Terraform**
 
-    ---
+| **Escenario**     | **Descripción**                                                                                 |
+|-------------------|-------------------------------------------------------------------------------------------------|
+| **Actor Principal**| Usuario                                                                                        |
+| **Precondiciones** | El usuario tiene acceso a Terraform y está autorizado para realizar despliegues.               |
+| **Flujo Básico**   | 1. **Actor**: El usuario ejecuta el comando para desplegar la infraestructura con Terraform. <br> 2. **Sistema**: Terraform configura y despliega los recursos automáticamente. <br> 3. **Actor**: El usuario verifica el estado del despliegue a través de la consola. |
+| **Postcondiciones**| La infraestructura se despliega correctamente según la configuración definida en Terraform.    |
+| **Excepciones**    | Si ocurre un error durante el despliegue, **Sistema**: Terraform muestra los detalles del error para su corrección. |
 
-    **Caso de Uso: Participar en el Evento (CU02)**
+### 3. **Garantía de Disponibilidad y Escalabilidad en AWS**
 
-    **Actores:** Estudiante  
-    **Descripción:** Permitir al estudiante registrarse e interactuar con los recursos proporcionados para participar en el evento.  
-    **Precondiciones:** El evento debe estar abierto para la inscripción y el estudiante debe estar registrado en la plataforma.
+| **Escenario**     | **Descripción**                                                                                 |
+|-------------------|-------------------------------------------------------------------------------------------------|
+| **Actor Principal**| Usuario                                                                                        |
+| **Precondiciones** | Los recursos en AWS están configurados para soportar escalabilidad.                            |
+| **Flujo Básico**   | 1. **Actor**: El usuario accede al panel de AWS para verificar la disponibilidad y escalabilidad de los recursos. <br> 2. **Sistema**: El sistema verifica la infraestructura y garantiza que se puede escalar según la demanda. |
+| **Postcondiciones**| Los recursos son escalables y disponibles según las necesidades del evento.                    |
+| **Excepciones**    | Si la infraestructura no puede escalar, **Sistema**: El sistema envía una alerta notificando la limitación. |
 
-    | **Caso de Uso**  | Participar en el Evento (CU02)                                                                                              |
-    |-------------------|----------------------------------------------------------------------------------------------------------------------------|
-    | **Actores**       | Estudiante                                                                                                                |
-    | **Descripción**   | Permitir al estudiante registrarse y participar activamente en las actividades del evento.                                 |
-    | **Precondiciones**| El estudiante debe estar registrado en la plataforma y tener acceso a los recursos proporcionados.                         |
-    | **Flujo Normal**  |                                                                                                                            |
-    | **Acción del Actor**                                             | **Curso del Sistema**                                                                                   |
-    | 1. Accede a la plataforma de inscripción del evento.              | 2. Completa su registro y recibe confirmación.                                                            |
-    | 3. Participa en las actividades programadas.                      | 4. Visualiza los recursos disponibles y accede a las conferencias o materiales.                          |
-    | 5. Asiste a las sesiones o actividades programadas.               | 6. Interactúa con otros participantes y los recursos del evento.                                         |
+### 4. **Pruebas de Carga y Rendimiento**
 
-    ---
+| **Escenario**     | **Descripción**                                                                                 |
+|-------------------|-------------------------------------------------------------------------------------------------|
+| **Actor Principal**| Usuario                                                                                        |
+| **Precondiciones** | La infraestructura está configurada y lista para realizar pruebas.                             |
+| **Flujo Básico**   | 1. **Actor**: El usuario configura las pruebas de carga y rendimiento. <br> 2. **Sistema**: El sistema realiza las pruebas simulando alta demanda. <br> 3. **Actor**: El usuario revisa los resultados para identificar posibles cuellos de botella. |
+| **Postcondiciones**| El sistema muestra los resultados de las pruebas con las métricas de rendimiento.              |
+| **Excepciones**    | Si alguna de las pruebas falla, **Sistema**: El sistema proporciona un informe detallado del error. |
 
-    **Caso de Uso: Supervisar el Evento (CU03)**
+### 5. **Integración con Plataformas Universitarias**
 
-    **Actores:** Bienestar Universitario  
-    **Descripción:** Permitir a Bienestar Universitario supervisar el evento, asegurando que las actividades se desarrollen según lo planeado y que la participación estudiantil sea adecuada.  
-    **Precondiciones:** El evento debe estar en marcha y Bienestar Universitario debe tener acceso a las métricas y registros del evento.
+| **Escenario**     | **Descripción**                                                                                 |
+|-------------------|-------------------------------------------------------------------------------------------------|
+| **Actor Principal**| Usuario                                                                                        |
+| **Precondiciones** | La plataforma universitaria está configurada y disponible para la integración.                 |
+| **Flujo Básico**   | 1. **Actor**: El usuario configura la integración con la plataforma universitaria. <br> 2. **Sistema**: El sistema sincroniza la infraestructura con las bases de datos de usuarios y gestión de eventos. |
+| **Postcondiciones**| La infraestructura está integrada y puede interactuar con otras plataformas universitarias.     |
+| **Excepciones**    | Si hay problemas con la integración, **Sistema**: El sistema muestra un error indicando la causa. |
 
-    | **Caso de Uso**  | Supervisar el Evento (CU03)                                                                                               |
-    |-------------------|----------------------------------------------------------------------------------------------------------------------------|
-    | **Actores**       | Bienestar Universitario                                                                                                   |
-    | **Descripción**   | Supervisar y gestionar el evento en tiempo real, asegurando que todo el desarrollo del evento se realice sin inconvenientes.|
-    | **Precondiciones**| El evento debe estar en curso y Bienestar Universitario debe tener acceso al sistema.                                      |
-    | **Flujo Normal**  |                                                                                                                            |
-    | **Acción del Actor**                                             | **Curso del Sistema**                                                                                   |
-    | 1. Inicia sesión en el sistema de supervisión del evento.          | 2. Visualiza el estado general del evento, incluyendo la participación de los estudiantes.               |
-    | 3. Revisa las métricas de actividad y asistencia.                 | 4. Ajusta los aspectos logísticos si es necesario.                                                        |
-    | 5. Realiza ajustes o intervenciones durante el evento.            | 6. Asegura la correcta ejecución de las actividades.                                                     |
+### 6. **Implementación de EC2 con Amazon Linux 2 para Docker**
+
+| **Escenario**     | **Descripción**                                                                                 |
+|-------------------|-------------------------------------------------------------------------------------------------|
+| **Actor Principal**| Usuario                                                                                        |
+| **Precondiciones** | El usuario tiene acceso a AWS y tiene los permisos necesarios para crear una instancia EC2.     |
+| **Flujo Básico**   | 1. **Actor**: El usuario configura una instancia EC2 con Amazon Linux 2. <br> 2. **Sistema**: El sistema instala Docker en la instancia. <br> 3. **Actor**: El usuario verifica que Docker se está ejecutando correctamente. |
+| **Postcondiciones**| La instancia EC2 con Docker está funcionando correctamente.                                    |
+| **Excepciones**    | Si la configuración de la instancia falla, **Sistema**: El sistema muestra un mensaje de error y detalles del fallo. |
+
+### 7. **Configuración de Instancia de Grafana Cloud**
+
+| **Escenario**     | **Descripción**                                                                                 |
+|-------------------|-------------------------------------------------------------------------------------------------|
+| **Actor Principal**| Usuario                                                                                        |
+| **Precondiciones** | El usuario tiene acceso a Grafana Cloud y los recursos necesarios.                             |
+| **Flujo Básico**   | 1. **Actor**: El usuario configura la instancia de Grafana Cloud. <br> 2. **Sistema**: El sistema configura los paneles de monitoreo según los parámetros definidos. <br> 3. **Actor**: El usuario accede al dashboard para visualizar las métricas. |
+| **Postcondiciones**| La instancia de Grafana Cloud está configurada y mostrando los datos.                          |
+| **Excepciones**    | Si hay errores en la configuración, **Sistema**: El sistema muestra los detalles del fallo y sugerencias para corregirlo. |
+
+### 8. **Hospedaje de Aplicación Flutter en S3**
+
+| **Escenario**     | **Descripción**                                                                                 |
+|-------------------|-------------------------------------------------------------------------------------------------|
+| **Actor Principal**| Usuario                                                                                        |
+| **Precondiciones** | El usuario tiene acceso a AWS y a un bucket S3 configurado.                                     |
+| **Flujo Básico**   | 1. **Actor**: El usuario carga los archivos de la aplicación Flutter en el bucket S3. <br> 2. **Sistema**: El sistema configura el bucket para servir la aplicación como un sitio web estático. <br> 3. **Actor**: El usuario accede a la aplicación desde la URL proporcionada. |
+| **Postcondiciones**| La aplicación Flutter está disponible en línea como un sitio web estático.                     |
+| **Excepciones**    | Si hay un error en la carga o configuración, **Sistema**: El sistema informa al usuario y ofrece soluciones. |
+
+### 9. **Configuración de MongoDB Atlas**
+
+| **Escenario**     | **Descripción**                                                                                 |
+|-------------------|-------------------------------------------------------------------------------------------------|
+| **Actor Principal**| Usuario                                                                                        |
+| **Precondiciones** | El usuario tiene acceso a MongoDB Atlas y las credenciales necesarias.                         |
+| **Flujo Básico**   | 1. **Actor**: El usuario configura un cluster en MongoDB Atlas. <br> 2. **Sistema**: El sistema crea los usuarios y las bases de datos necesarias. <br> 3. **Actor**: El usuario verifica que la configuración se haya completado con éxito. |
+| **Postcondiciones**| El cluster y los usuarios de MongoDB Atlas están correctamente configurados.                   |
+| **Excepciones**    | Si ocurre un error en la configuración, **Sistema**: El sistema muestra un mensaje de error detallado.      |
+
+### 10. **Hospedaje de Aplicación React en S3**
+
+| **Escenario**     | **Descripción**                                                                                 |
+|-------------------|-------------------------------------------------------------------------------------------------|
+| **Actor Principal**| Usuario                                                                                        |
+| **Precondiciones** | El usuario tiene acceso a AWS y a un bucket S3 configurado.                                     |
+| **Flujo Básico**   | 1. **Actor**: El usuario carga los archivos de la aplicación React en el bucket S3. <br> 2. **Sistema**: El sistema configura el bucket para servir la aplicación como un sitio web estático. <br> 3. **Actor**: El usuario accede a la aplicación desde la URL proporcionada. |
+| **Postcondiciones**| La aplicación React está disponible en línea como un sitio web estático.                       |
+| **Excepciones**    | Si hay un error en la carga o configuración, **Sistema**: El sistema informa al usuario y ofrece soluciones. |
 
 
     5.3	Modelo Logico
