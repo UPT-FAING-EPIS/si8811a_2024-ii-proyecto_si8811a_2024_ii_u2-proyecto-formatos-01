@@ -333,16 +333,20 @@ Integrantes:
 4. <span id="_Toc52661349" class="anchor"></span>**Especificación de Requerimientos de Software**
 
     4.1 Cuadro de Requerimientos funcionales Inicial
-
-    |  ID   | Descripción                                                                                                     | Prioridad |
-    | :---: | :-------------------------------------------------------------------------------------------------------------- | :-------: |
-    | RF-01 | Monitorear el estado de la infraestructura tecnológica (servidores, red, almacenamiento, etc.) en tiempo real.    |   Alta    |
-    | RF-02 | Configurar y desplegar automáticamente los recursos tecnológicos mediante herramientas de automatización (Terraform). |   Alta    |
-    | RF-03 | Garantizar la disponibilidad y escalabilidad de la infraestructura mediante el uso de servicios en la nube (AWS). |   Alta    |
-    | RF-04 | Implementar un sistema de almacenamiento seguro y escalable para almacenar logs, datos históricos y métricas.    |   Alta    |
-    | RF-05 | Realizar pruebas de carga y rendimiento de la infraestructura para asegurar la capacidad durante el evento.       |   Alta    |
-    | RF-06 | Implementar una red de monitoreo que detecte fallos o problemas en la infraestructura tecnológica y genere alertas. |   Alta    |
-    | RF-07 | Configurar el sistema de infraestructura para que pueda integrarse con otras plataformas de la universidad, como la gestión de eventos y bases de datos de usuarios. |  Media    |
+   
+    |   ID   | Descripción                                                                                                     | Prioridad |
+    | :----: | :-------------------------------------------------------------------------------------------------------------- | :-------: |
+    | RF-01  | Monitorear el estado de la infraestructura tecnológica (servidores, red, almacenamiento, etc.) en tiempo real.    |   Alta    |
+    | RF-02  | Configurar y desplegar automáticamente los recursos tecnológicos mediante herramientas de automatización (Terraform). |   Alta    |
+    | RF-03  | Garantizar la disponibilidad y escalabilidad de la infraestructura mediante el uso de servicios en la nube (AWS). |   Alta    |
+    | RF-04  | Realizar pruebas de carga y rendimiento de la infraestructura para asegurar la capacidad durante el evento.       |   Alta    |
+    | RF-05  | Configurar el sistema de infraestructura para que pueda integrarse con otras plataformas de la universidad, como la gestión de eventos y bases de datos de usuarios. |  Media    |
+    | RF-06  | Implementación de un EC2 con Amazon Linux 2 para la Ejecución de Contenedores Docker en AWS mediante Terraform.   |   Alta    |
+    | RF-07  | Configuración de una Instancia de Grafana Cloud mediante Terraform.                                              |   Alta    |
+    | RF-08  | Configuración de un Bucket S3 para Hospedar una Aplicación Flutter como Sitio Web Estático.                      |   Media   |
+    | RF-09  | Configuración de un Cluster y Usuario de MongoDB Atlas mediante Terraform.                                       |   Alta    |
+    | RF-10  | Configuración de un Bucket S3 para Hospedar una Aplicación React como Sitio Web Estático.                        |   Media   |
+    
 
 
     4.2 Cuadro de Requerimientos No funcionales
