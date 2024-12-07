@@ -562,17 +562,24 @@ Integrantes:
     
     - **a)** Análisis de Objetos
     
+    
     **Entidades**
+    
     
     ![entidad](./media/entidades.png)
     
+    
     **Frontera**
+    
     
     ![frontera](./media/frontera.png)
     
+    
     **Control**
     
+    
     ![control](./media/control.png)
+    
     
     
     - **c)** Diagrama de Secuencia
